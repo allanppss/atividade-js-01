@@ -1,0 +1,295 @@
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+* {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-wr {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-ch {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ri {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-bv {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex-le {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-sp {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-sa {
+  -webkit-box-pack: last-baseline;
+      -ms-flex-pack: last-baseline;
+          justify-content: last-baseline;
+  padding-top: 50px;
+}
+
+.flex-cv {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+}
+
+body section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body section .container {
+  height: 100%;
+}
+
+body section .bgs-estadio {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+}
+
+body section .bgs-estadio .flex {
+  -webkit-transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  left: 0;
+  width: 300vw;
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+}
+
+body section .bgs-estadio.i1 .flex {
+  left: 0;
+}
+
+body section .bgs-estadio.i2 .flex {
+  left: -100vw;
+}
+
+body section .bgs-estadio.i3 .flex {
+  left: -200vw;
+}
+
+body section .bgs-estadio .img01 {
+  background: url(../assets/estadio1.png) center center/cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+body section .bgs-estadio .img02 {
+  background: url(../assets/estadio2.png) center center/cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+body section .bgs-estadio .img03 {
+  background: url(../assets/estadio3.png) center center/cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+body section .bg-gramado {
+  background: url(../assets/bg-gramado.jpg);
+  height: 100vh;
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  -webkit-transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition-duration: 3000ms;
+          transition-duration: 3000ms;
+}
+
+body section .jogadores {
+  height: 357px;
+  width: 232px;
+  overflow: hidden;
+}
+
+body section .jogadores .flex {
+  -webkit-transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  left: 0;
+  -webkit-transition-duration: 600ms;
+          transition-duration: 600ms;
+}
+
+body section .jogadores.j1 .flex {
+  position: relative;
+  left: 0px;
+}
+
+body section .jogadores.j2 .flex {
+  position: relative;
+  left: -232px;
+}
+
+body section .jogadores.j3 .flex {
+  position: relative;
+  left: -464px;
+}
+
+body section .times {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin-left: -195px;
+  margin-right: 90px;
+}
+
+body section .times .flex {
+  -webkit-transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  left: 0;
+  -webkit-transition-duration: 1500ms;
+          transition-duration: 1500ms;
+}
+
+body section .times.t1 .flex {
+  position: relative;
+  left: 0px;
+}
+
+body section .times.t2 .flex {
+  position: relative;
+  left: -250px;
+}
+
+body section .times.t3 .flex {
+  position: relative;
+  left: -500px;
+}
+
+body section .boxs {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  left: 90px;
+}
+
+body section .textos {
+  margin-left: 100px;
+  font-size: 35px;
+  color: #fff;
+  width: 300px;
+  overflow: hidden;
+}
+
+body section .textos .flex {
+  -webkit-transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  left: 0;
+  -webkit-transition-duration: 1200ms;
+          transition-duration: 1200ms;
+}
+
+body section .textos h2 {
+  font-weight: 100;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+body section .textos h3 {
+  width: 300px;
+  font-size: 35px;
+}
+
+body section .textos.tx01 .flex {
+  position: relative;
+  left: 0px;
+}
+
+body section .textos.tx02 .flex {
+  position: relative;
+  left: -294px;
+}
+
+body section .textos.tx03 .flex {
+  position: relative;
+  left: -588px;
+}
+
+body section .setas i.fa.fa-angle-left {
+  position: absolute;
+  color: white;
+  bottom: 20px;
+  left: 20px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+body section .setas i.fa.fa-angle-right {
+  position: absolute;
+  color: white;
+  bottom: 20px;
+  left: 20px;
+  font-size: 50px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

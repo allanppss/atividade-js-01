@@ -1,0 +1,311 @@
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@mixin animacao {
+    -webkit-transition: all 700ms cubic-bezier(0.000, 0.000, 0.380, 1.000);
+    -moz-transition: all 700ms cubic-bezier(0.000, 0.000, 0.380, 1.000);
+    -o-transition: all 700ms cubic-bezier(0.000, 0.000, 0.380, 1.000);
+    transition: all 700ms cubic-bezier(0.000, 0.000, 0.380, 1.000);
+}
+
+@mixin animaExpo {
+    -webkit-transition: all 300ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -moz-transition: all 300ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -o-transition: all 300ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: all 300ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-wr {
+    flex-wrap: wrap;
+}
+
+.flex-ch {
+    justify-content: center;
+}
+
+.flex-ri {
+    justify-content: flex-end;
+}
+
+.flex-bv {
+    align-items: flex-end;
+}
+
+.flex-le {
+    justify-content: flex-start;
+}
+
+.flex-sp {
+    justify-content: space-between;
+}
+
+.flex-sa {
+    justify-content: last-baseline;
+    padding-top: 50px;
+}
+
+.flex-cv {
+    align-items: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+
+    section {
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        min-height: 100vh;
+
+        .container {
+            height: 100%;
+        }
+
+        .bgs-estadio {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: absolute;
+
+            .flex {
+                @include animaExpo();
+                position: relative;
+                left: 0;
+                width: 300vw;
+                transition-duration: 2000ms;
+            }
+
+            &.i1 {
+                .flex {
+                    left: 0;
+                }
+            }
+
+            &.i2 {
+                .flex {
+                    left: -100vw;
+                }
+            }
+
+            &.i3 {
+                .flex {
+                    left: -200vw;
+                }
+            }
+
+            .img01 {
+                background: url(../assets/estadio1.png) center center / cover;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .img02 {
+                background: url(../assets/estadio2.png) center center / cover;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .img03 {
+                background: url(../assets/estadio3.png) center center / cover;
+                width: 100vw;
+                height: 100vh;
+            }
+
+        }
+
+        .bg-gramado {
+            background: url(../assets/bg-gramado.jpg);
+            height: 100vh;
+            width: 60%;
+            position: absolute;
+            left: 50%;
+            @include animaExpo();
+            transition-duration: 3000ms;
+        }
+
+        .jogadores {
+            height: 357px;
+            width: 232px;
+            overflow: hidden;
+
+            .flex {
+                @include animaExpo();
+                position: relative;
+                left: 0;
+                transition-duration: 600ms;
+            }
+
+            &.j1 {
+                .flex {
+                    position: relative;
+                    left: 0px;
+                }
+            }
+
+            &.j2 {
+                .flex {
+                    position: relative;
+                    left: -232px;
+                }
+            }
+
+            &.j3 {
+                .flex {
+                    position: relative;
+                    left: -464px;
+                }
+            }
+        }
+
+        .times {
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            margin-left: -195px;
+            margin-right: 90px;
+
+            .flex {
+                @include animaExpo();
+                position: relative;
+                left: 0;
+                transition-duration: 1500ms;
+            }
+
+            &.t1 {
+                .flex {
+                    position: relative;
+                    left: 0px;
+                }
+            }
+
+            &.t2 {
+                .flex {
+                    position: relative;
+                    left: -250px;
+                }
+            }
+
+            &.t3 {
+                .flex {
+                    position: relative;
+                    left: -500px;
+                }
+            }
+        }
+
+        .boxs {
+            position: relative;
+            height: 100%;
+            min-height: 100vh;
+            left: 90px;
+        }
+
+        .textos {
+            margin-left: 100px;
+            font-size: 35px;
+            color: #fff;
+            width: 300px;
+            overflow: hidden;
+
+            .flex {
+                @include animaExpo();
+                position: relative;
+                left: 0;
+                transition-duration: 1200ms;
+            }
+
+            h2 {
+                font-weight: 100;
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                width: 300px;
+                font-size: 35px;
+            }
+
+            &.tx01 {
+                .flex {
+                    position: relative;
+                    left: 0px;
+                }
+            }
+
+            &.tx02 {
+                .flex {
+                    position: relative;
+                    left: -294px;
+                }
+            }
+
+            &.tx03 {
+                .flex {
+                    position: relative;
+                    left: -588px;
+                }
+            }
+        }
+
+        .setas {
+            i.fa.fa-angle-left {
+                position: absolute;
+                color: white;
+                bottom: 20px;
+                left: 20px;
+                font-size: 50px;
+                cursor: pointer;
+            }
+
+            i.fa.fa-angle-right {
+                position: absolute;
+                color: white;
+                bottom: 20px;
+                left: 20px;
+                font-size: 50px;
+                margin-left: 50px;
+                cursor: pointer;
+            }
+        }
+    }
+}
