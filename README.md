@@ -6,4 +6,4 @@ Esse é um projeto HTML + SCSS + JS + jQuery que desenvolvi juntamento com Leo D
 
 
 
-um ```diffteste``` de cor
+um ```teste``` de cor
